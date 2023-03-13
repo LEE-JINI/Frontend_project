@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inconsolata', monospace;
+    }
+  </style>
+</head>
+<body class= "bg-neutral-200 h-50000 "  >
+        <!-- taliwind 랑 bootstrap 의 다른점 (프ㅔ임워크)
+        t > 스타일 이름이 거의 크래스 이름과 동일, 부트 스트랙의 다점을 보완하려고 생김
+        컨테이너 아니고 박스 사이징 으로 되어있고 기본적인 태그 설정은 다 없어짐-->
+
+        <!-- sticky staitc 스크롤하면 fixed 가 됨.  메뉴 때문에 이미지가 가려지지 않음.-->
+       
+    <!-- NAVBAR -->
+     <nav class="sticky top-0 p-2 w-full z-10 bg-black">
+         <!-- sticky = static+fixed / position
+        top-0. 16px=1rem  p-2 padding2 , w-full width full, -->
+        <ul class="flex">
+          <li class="w-1/4">
+            <a href="#" class="block p-2 text-center text-white hover:bg-white hover:text-black">HOME</a>
+            <!-- block 위아래 패딩 꽉차게 text-center text align (배치) 
+            justify 너비 알아서 잘 맞춤. inherit 부모 엘리먼트의 속성을 그대로 상속. 
+        : 프리픽스가 붙으면 동작 같은. -->
+        </li>
+          <li class="w-1/4">
+            <a href="#about" class="block p-2 text-center text-white hover:bg-white hover:text-black">ABOUT</a>
+          <!-- href 부분에 if 를 입력해줘서 눌렀을 때 이동 할 수 있게 -->
+          </li>
+          <li class="w-1/4">
+            <a href="#menu" class="block p-2 text-center text-white hover:bg-white hover:text-black">MENU</a>
+          </li>
+          <li class="w-1/4">
+            <a href="#where" class="block p-2 text-center text-white hover:bg-white hover:text-black">WHERE</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- 대괄호는 개발자가 원하는 값 입력할 수 있게 해줌. / bg-cover bg 사이즈 cover / grayscale , css 필터 (흑백)-->
+      <div class="h-[500px] bg-[url('https://www.w3schools.com/w3images/coffeehouse.jpg')] bg-cover bg-center grayscale-[50%]">
+        <div class="h-[450px] flex flex-col justify-center">
+            <!-- flex-col 수직 / justify 아이템 간격 -->
+            <h1 class="text-8xl text-center text-white">
+                the <br>
+                <span class="inline-block mt-8">
+                    cafe
+                </span>
+            </h1>
+        </div>
+        <div class="mt-4 px-4 flex justify-between">
+            <!-- display:none는 아예 메모리 안 차게, invisible 는 안보이게만 하는것 메모리도 잡혀있음. md:ㅂ반응ㅇ형
+            @media min-withd 768-->
+            <span class="bg-black text-sm text-white px-2 invisible md:visibie">Open from 6am to 5pm</span>
+            <span class="text-white text-sm">15 Adr street, 5015</span>
+        </div>
+      </div>
+
+      <main class="max-w-2xl mx-auto px-4">
+            <div id="about" class="py-16"> 
+                <!-- py-16 y기준으로 16 4px=1rem / 밑 tracking-widest 자간설정 em은 폰트사이즈. letter-spacing 사용되는 엘리먼트의 폰트사이즈 기준 -->
+                <h1 class="text-2xl text-center tracking-widest">
+                    <span class="bg-black text-white px-2"> ABOUT THE CAFE</span>
+                    <!-- px-2 x축 기준으로 2패딩 / span 텍스트나 딱 이 부분에만 설정을 주고 싶을 때 사용  -->
+                </h1>
+
+            </div>
+
+            <p class="text-lg my-4">
+        The Cafe was founded in blabla by Mr. 
+        Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <p class="text-lg my-4 ">
+        In addition to our full espresso and brew bar menu, 
+        we serve fresh made-to-order breakfast and lunch sandwiches, 
+        as well as a selection of sides and salads and other good stuff.
+      </p>
+      <!-- px-4 왼쪽 오른 쪽 패딩 4 /mt-8 마진탑 8/ border-l-8 왼쪽에 2rem / border-l-gray-300 왼쪽 회색 300   
+      보더에서 방향이 없으면 전체임.-->
+      <div class="px-4 mt-8 bg-gray-200 border-l-8 border-l-gray-300 ">
+        <p class="my-4 text-lg italic">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Numquam quisquam ratione pariatur quae?
+        </p>
+        <!-- my-4 1rem  / text-lg fomt-->
+        <p class="my-4 text-lg"> Chef, coffeeiset and owner : Liam Brown</p>
+      </div>
+      <!-- grayscale 회색조 ( 필터) / font-semibold font-weight 600, 굵기..? -->
+    <img class="mt-8 grayscale-[88%]" src="https://www.w3schools.com/w3images/coffeeshop.jpg" alt="">
+
+      <p class="my-4 text-lg">
+        <span class="font-semibold"> Opening hours:</span> everyday from 6am to 5pm.
+      </p>
+      <p class="my-4 text-lg">
+        <span class="font-semibold"> Address:</span> 15 Adr street, 5015, NY
+      </p>
+
+
+      <!-- 메뉴  -->
+      <div id="menu" class="py-16">
+        <h1 class="text-2xl text-center tracking-widest">
+          <span class="bg-black text-white px-2" >THE MENU</span>
+        </h1>
+      </div>
+
+     <!-- 메뉴 두개  -->
+     <!-- flex라서 메뉴 두개랑, 정보들 엘리먼트 이어붙여야 하는데 자리 없어서 자동으로 내려옴. -->
+     <div class="border bg-white shadow-lg flex flex-wrap px-4 py-2">
+      <!-- radio 선택지 중 하나만 가능 / input id , lable for 로 연결해줌. / checked 해서 초기화면 선택해두기 -->
+      <input type="radio" class="hidden peer/eat" name="menu" id="eat" checked>
+      <label for="eat" 
+      
+      
+      class="w-1/2 text-lg text-center font-semibold cursor-pointer
+      peer-checked/eat:bg-neutral-400 peer-checked/eat:text-white">
+        Eat</label>
+     <!-- w-1/2 숫자가 분수면 퍼센트 /  cursor-pointer 커서 포인터 바꾸기
+    peer-checked/ 이 인풋이 체크가 되었을때 뒤에 클래스 실행.-->
+      <input type="radio" class="hidden peer/drink" name="menu" id="drink">
+      <label for="drink"
+      class="w-1/2 text-lg text-center font-semibold cursor-pointer
+      peer-checked/drink:bg-neutral-400 peer-checked/drink:text-white">
+        Drink</label>
+
+      <!-- EAT 메뉴 정보 -->
+      <div class="py-4 w-full hidden peer-checked/eat:block">
+        <div class="py-4">
+          <h3 class="my-4 text-xl font-semibold">Bread Basket</h3>
+          <p class="my-4 text-lg text-gray-500">Assortemt of fresh baked fruit
+            breads and nuffins 5.50
+          </p>
+        </div>
+
+        <div class="py-4">
+          <h3 class="my-4 text-xl font-semibold">Honey Almond Granola wihe Fruites</h3>
+          <p class="my-4 text-lg text-gray-500">
+            Natural cereal of honey toasted oats, raisins, almonds and dates 7.00
+          </p>
+        </div>
+
+        <div class="py-4">
+          <h3 class="my-4 text-xl font-semibold">Balgian Waffle</h3>
+          <p class="my-4 text-lg text-gray-500">
+            Vanilla flavored batter with malted flour 7.50
+          </p>
+        </div>
+
+        <div class="py-4">
+          <h3 class="my-4 text-xl font-semibold">Scrambled eggs</h3>
+          <p class="my-4 text-lg text-gray-500">
+            Scrambled eggs, roasted red pepper and garlic, with green oniaons 7.50
+          </p>
+        </div>
+
+        <div class="py-4">
+          <h3 class="my-4 text-xl font-semibold">Blueberry Pancakes</h3>
+          <p class="my-4 text-lg text-gray-500">
+            With syrup, butter and lots of berries 8.50
+          </p>
+        </div>
+      </div>
+
+      <!-- drink 메뉴 정보  peer-checked/drink:block 드링크 체크하면 드링크 영역 보여주기-->
+      <div class="py-4 w-full hidden peer-checked/drink:block">
+        <div class="py-4">
+          <h3 class="my-4 text-xl font-semibold">Coffee</h3>
+          <p class="my-4 text-lg text-gray-500">Regular coffee 2.50</p>
+        </div>
+
+        <div class="py-4">
+          <h3 class="my-4 text-xl font-semibold">chocolato</h3>
+          <p class="my-4 text-lg text-gray-500">Chocolate espresso with milk 4.50
+          </p>
+        </div>
+
+        <div class="py-4">
+          <h3 class="my-4 text-xl font-semibold">Corretto</h3>
+          <p class="my-4 text-lg text-gray-500">Whiskey and coffee 5.00
+          </p>
+        </div>
+
+        <div class="py-4">
+          <h3 class="my-4 text-xl font-semibold">Iced tea</h3>
+          <p class="my-4 text-lg text-gray-500">
+            Hot tea, except not hot 3.00
+          </p>
+        </div>
+
+        <div class="py-4">
+          <h3 class="my-4 text-xl font-semibold">Soda</h3>
+          <p class="my-4 text-lg text-gray-500">
+            Coke, Sprite, Fanta, etx. 2.50
+          </p>
+        </div>
+
+      </div>
+     </div>
+
+     <!-- flex order tailwind는 내부적으로 js 있어서 사용안해도 됨. -->
+
+     <img class="mt-8 grayscale-[80%]" src="https://www.w3schools.com/w3images/coffeehouse2.jpg" alt="">
+
+     <div id="where" class="py-16"> 
+      <!-- py-16 y기준으로 16 4px=1rem / 밑 tracking-widest 자간설정 em은 폰트사이즈. letter-spacing 사용되는 엘리먼트의 폰트사이즈 기준 -->
+      <h1 class="text-2xl text-center tracking-widest">
+          <span class="bg-black text-white px-2"> WHERE TO FIND US </span>
+          <!-- px-2 x축 기준으로 2패딩 / span 텍스트나 딱 이 부분에만 설정을 주고 싶을 때 사용  -->
+      </h1>
+    </div>
+
+
+    <p class="text-lg my-4"> Find us at some address at some place.</p>
+
+    <img class="mt-4 grayscale-[80%]" src="https://www.w3schools.com/w3images/map.jpg" alt="">
+
+    <p class="my-4 text-lg">
+      <span class="bg-black text-white px-2 py-1">FII!</span>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil quaerat ipsum, adipisci quos natus nesciunt quas consequuntur perspiciatis itaque fuga? Fuga quae asperiores saepe. Illo ex soluta fugiat tenetur unde!
+    </p>
+    
+   <form action="">
+    <p>Reserve a table, ask for today's special or just send us a message :</p>
+    <div class="mb-4">
+      <label>
+        <!-- border 방향없으면 전체. w-full 가로길이 꽉 채우기 -->
+        <input type="text" class="border text-lg px-2 py-4 w-full" placeholder="Name">
+      </label>
+    </div>
+    <div class="mb-4">
+      <label>
+        <input type="number" class="border text-lg px-2 py-4 w-full" placeholder="How many people">
+      </label>
+    </div>
+    <div class="mb-4">
+      <label>
+        <input type="date" class="border text-lg px-2 py-4 w-full" value="2023-01-16">
+      </label>
+    </div>
+    <div class="mb-4">
+      <label>
+        <input type="text" class="border text-lg px-2 py-4 w-full" placeholder="Message / Special requirements">
+      </label>
+    </div>
+
+    <button class="bg-black text-white text-lg px-4 py-2 hover:bg-gray-400 hover:text-black">
+      SEND MESSAGE
+    </button>
+
+   </form>
+
+   <footer class="mt-16 py-16">
+    <p class="text-center text-lg">
+      Powerd by <a href="" class="underline">Name</a>
+    </p>
+   </footer>
+
+        </main>
+</body>
+</html>

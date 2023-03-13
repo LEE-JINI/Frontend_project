@@ -1,0 +1,1555 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inconsolata', monospace;
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+    </style>
+
+<body class="bg-black">
+
+    <!-- 네비 게이션 -->
+    <nav class="sticky top-0 p-2 w-full z-10 bg-black/30 font-bold ">
+        <div class="flex justify-between ml-8">
+            <div class="flex">
+                <a class="text-white p-2 block text-center mr-4" href="#">MAIN</a>
+                <a class="text-white p-2 block text-center mr-4" href="#">MOVIE</a>
+                <a class="text-white p-2 block text-center mr-4" href="#">DRAMA</a>
+                <a class="text-white p-2 block text-center mr-4" href="#">DRAMA</a>
+                <a class="text-white p-2 block text-center mr-4" href="#">ORIGINAL</a>
+            </div>
+
+            <div class="flex">
+                <a class="text-white p-2 block text-center mr-2  " href=""> 검색 </a>
+                <div class="dropdown mr-4">
+                    <div class="">
+                        <picture class="rounded dropbtn">
+                            <source
+                                srcset="https://image.tving.com/upload/profile/IG00000019_IMAGE_1.png/dims/resize/F_webp,100"
+                                type="image/webp" class="">
+                            <img class="rounded text-center m-2 mr-4" style="width: 30px;"
+                                src="https://image.tving.com/upload/profile/IG00000019_IMAGE_1.png/dims/resize/100">
+                        </picture>
+                    </div>
+
+                    <div class="dropdown-content">
+                        <a href="#">MY</a>
+                        <a href="#">이용권</a>
+                        <a href="#">쿠폰등록</a>
+                        <a href="#">고객센터</a>
+                        <a href="#">로그아웃</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </nav>
+
+
+    <!-- 메인 사진 -->
+    <section>
+
+        <div class="h-[500px] bg-[url('https://image.tving.com/upload/fe/highlight/2023/0227/20230227102825banner_image_url_u.jpg/dims/resize/F_webp,1920')] bg-cover bg-center visibie ">
+            <div class="">
+                <div class="pt-48 text-right text-white font-bold mr-4  hover:h1.invisible"> &gt; </div>
+                <p class="ml-20 pt-48 text-white text-xl font-bold ">박형식 X 전소니의 청춘구원 로맨스 </p>
+            
+
+            </div>
+        </div>
+
+        <!-- 
+        <div  class="h-[500px] bg-[url('https://image.tving.com/upload/fe/highlight/2023/0306/20230306093223banner_image_url_u.jpg/dims/resize/F_webp,1920')] bg-cover bg-center  visibie">
+        <div class="">
+            <div class="pt-48 text-right text-white font-bold mr-4  hover:invisible"> 다음 </div>
+            <p class="ml-20 pt-48 text-white text-xl font-bold "><일타스캔들> 정경호의 복고 수사기 </p>
+        
+        </div>
+         -->
+        </div>
+
+    </section>
+
+
+    <!-- 장르 -->
+    <section class="text-white">
+        <div class="mt-16">
+            <h2 class="text-3xl p-4 text-board font-bold  ml-8"> 장르 </h2>
+        </div>
+
+        <div class="">
+            <div id="scroll" class="whitespace-nowrap overflow-x-scroll">
+                <div class="flex py-2 px-4 ml-8 ">
+                    <div class="gerne_bg rounded-full text-lg p-4 mr-4 font-bold"> <a class="p-4" href="#"> drama </a> </div>
+                    <div class="gerne_bg rounded-full text-lg p-4 mr-4 font-bold"> <a class="p-4" href="#"> variety show </a>
+                    </div>
+                    <div class="gerne_bg rounded-full text-lg p-4 mr-4 font-bold"> <a class="p-4" href="#"> overseas series
+                        </a> </div>
+                    <div class="gerne_bg rounded-full text-lg p-4 mr-4 font-bold"> <a class="p-4" href="#"> animation </a>
+                    </div>
+                    <div class="gerne_bg rounded-full text-lg p-4 mr-4 font-bold"> <a class="p-4" href="#"> romance </a>
+                    </div>
+                    <div class="gerne_bg rounded-full text-lg p-4 mr-4 font-bold"> <a class="p-4" href="#"> comedy </a> </div>
+                    <div class="gerne_bg rounded-full text-lg p-4 mr-4 font-bold"> <a class="p-4" href="#"> thriller</a>
+                    </div>
+                    <div class="gerne_bg rounded-full text-lg p-4 mr-4 font-bold"> <a class="p-4" href="#"> mystery </a>
+                    </div>
+                    <div class="gerne_bg rounded-full text-lg p-4 mr-4 font-bold"> <a class="p-4" href="#"> adventure </a>
+                    </div>
+                    <div class="gerne_bg rounded-full text-lg p-4 mr-4 font-bold"> <a class="p-4" href="#"> action </a> </div>
+                    <div class="gerne_bg rounded-full text-lg p-4 mr-4 font-bold"> <a class="p-4" href="#"> action </a> </div>
+                    <div class="gerne_bg rounded-full text-lg p-4 mr-4 font-bold"> <a class="p-4" href="#"> action </a> </div>
+                    <div class="gerne_bg rounded-full text-lg p-4 mr-4 font-bold"> <a class="p-4" href="#"> action </a> </div>
+                    <div class="gerne_bg rounded-full text-lg p-4 mr-4 font-bold"> <a class="p-4" href="#"> action </a> </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+    <!-- 티빙에서 꼭 봐야할 프로그램 -->
+    <section class="text-white">
+
+        <div class="">
+            <h2 class="text-xl pt-20 px-2 font-bold m-8">티빙에서 꼭 봐야할 프로그램</h2>
+        </div>
+
+
+        <div class="flex overflow-x-scroll " id="scroll">
+            <div class="flex">
+                <div class="mr-4 ml-8" style="width: 200px;">
+                    <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP0900/P001665114.jpg/dims/resize/F_webp,400"
+                                        type="image/webp" class="">
+                                    <img class="rounded-lg "
+                                        src="https://image.tving.com/upload/cms/caip/CAIP0900/P001665114.jpg/dims/resize/400"
+                                        alt="아일랜드">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">아일랜드</p>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="mr-4 ml-4" style="width: 200px;"><a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP0900/P001691349.jpg/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP0900/P001691349.jpg/dims/resize/400"
+                                        alt="보이즈 플래닛">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">보이즈 플래닛</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="mr-4 ml-4" style="width: 200px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP0900/P001701826.jpg/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP0900/P001701826.jpg/dims/resize/400"
+                                        alt="소년비행 시즌 2">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">소년비행 시즌 2</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="mr-4 ml-4" style="width: 200px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP0900/P001697953.jpg/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP0900/P001697953.jpg/dims/resize/400"
+                                        alt="서진이네">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">서진이네</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="mr-4 ml-4" style="width: 200px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP0900/P001693861.jpg/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP0900/P001693861.jpg/dims/resize/400"
+                                        alt="메이어 오브 킹스타운 시즌2">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">메이어 오브 킹스타운 시즌2</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="mr-4 ml-4" style="width: 200px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP0900/P001690240.jpg/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP0900/P001690240.jpg/dims/resize/400"
+                                        alt="웹툰싱어">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">웹툰싱어</p>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="mr-4 ml-4" style="width: 200px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP0900/P001684080.jpg/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP0900/P001684080.jpg/dims/resize/400"
+                                        alt="만찢남">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">만찢남</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="mr-4 ml-4" style="width: 200px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP0900/P001698613.jpg/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP0900/P001698613.jpg/dims/resize/400"
+                                        alt="지구마불 세계여행">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">지구마불 세계여행</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="mr-4 ml-4" style="width: 200px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP0900/P001627603.jpg/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP0900/P001627603.jpg/dims/resize/400"
+                                        alt="텐트 밖은 유럽">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">텐트 밖은 유럽</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="mr-4 ml-4" style="width: 200px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP0900/P001682443.jpg/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP0900/P001682443.jpg/dims/resize/400"
+                                        alt="두발로 티켓팅">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">두발로 티켓팅</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="mr-4 ml-4" style="width: 200px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP0900/P001227842.jpg/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP0900/P001227842.jpg/dims/resize/400"
+                                        alt="귀멸의 칼날">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">귀멸의 칼날</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="mr-4 ml-4" style="width: 200px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP0900/P001588974.png/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP0900/P001588974.png/dims/resize/400"
+                                        alt="별똥별">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">별똥별</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="mr-4 ml-4" style="width: 200px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP0900/P001503248.jpg/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP0900/P001503248.jpg/dims/resize/400"
+                                        alt="유미의 세포들">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">유미의 세포들</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- 실시간 인기 영화 -->
+    <section>
+        <div>
+            <div>
+                <h2 class="text-white text-xl  pt-12 px-2 font-bold m-8"> 실시간 인기 영화 </h2>
+            </div>
+
+
+            <div class="">
+                <div class="flex flex-wrap">
+                    <div class="ml-8" style="width: 200px;">
+                        <a class="" href="#">
+                            <div class="">
+                                <div class="">
+                                    <picture class=" opacity-80 hover:opacity-100 rounded-lg">
+                                        <source
+                                            srcset="https://image.tving.com/upload/cms/caim/CAIM2100/M000370865.jpg/dims/resize/F_webp,400"
+                                            type="image/webp" class="css-1doy9ip euf32k21">
+                                        <img class="rounded-lg"
+                                            src="https://image.tving.com/upload/cms/caip/CAIP0900/P001695622.jpg/dims/resize/400"
+                                            alt="황제의 검">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="item__summary">
+                                <dl>
+                                    <dt>황제의 검</dt>
+                                    <dd><span>액션</span>
+                                        <p>황제의 검′이 되어 탐관오리를 숙청하던 천하제일 검객이 그 자리에 환멸을 느껴 모습을 감춘다.
+                                            10년 뒤, 그를 이어 ′황제의 검′이 된 사마치가 간신모리배와 결탁해 백성을 수탈하는 것을 목격하고… 검객은 정의를 위해 다시
+                                            검을 잡는다.</p>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="">
+                                <p class="text-white">황제의 검</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="ml-8" style="width: 200px;">
+                        <a class="" href="#">
+                            <div class="">
+                                <div class="info">
+                                    <picture class="curcor-pointer opacity-80 hover:opacity-100 rounded-lg">
+                                        <source
+                                            srcset="https://image.tving.com/upload/cms/caim/CAIM2100/M000147709.jpg/dims/resize/F_webp,400"
+                                            type="image/webp" class="css-1doy9ip euf32k21">
+                                        <img class="rounded-lg"
+                                            src="https://image.tving.com/upload/cms/caim/CAIM2100/M000147709.jpg/dims/resize/400"
+                                            alt="임금님의 사건수첩">
+                                    </picture>
+                                </div>
+                            </div>
+
+                            <div class="item__summary">
+                                <dl>
+                                    <dt>임금님의 사건수첩</dt>
+                                    <dd><span>코미디</span>
+                                        <p>모든 사건은 직접 파헤쳐야 직성이 풀리는 총명한 왕 ‘예종’(이선균).
+                                            그를 보좌하기 위해 학식, 가문, 외모(?)는 물론
+                                            한 번 본 것은 절대 잊지 않는 비상한 재주까지 겸비한 신입사관 ‘이서’가 임명된다.
+                                            하지만 의욕과 달리 어리바리한 행동을 일삼던 이서는
+                                            예종의 따가운 눈총을 한 몸에 받으며 고된 궁궐 생활을 시작한다.
+
+                                            때마침 한양에 괴이한 소문이 돌기 시작하고, 예종은 모든 소문과 사건이 심상치 않음을 직감한다.
+                                            예종과 이서는 모든 과학적 지식과 견문을 총동원,
+                                            괴소문의 실체를 파헤치기 위해 나서는데...!
+
+                                            사건 쫓는 임금 X 임금 쫓는 신입사관
+                                            궁 넘고 담 넘는 유쾌한 과학수사가 시작된다!</p>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="">
+                                <p class="text-white">임금님의 사건수첩</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="ml-8" style="width: 200px;">
+                        <a class="" href="#">
+                            <div class="">
+                                <div class="">
+                                    <picture class="curcor-pointer opacity-80 hover:opacity-100 rounded-lg">
+                                        <source
+                                            srcset="https://image.tving.com/upload/cms/caim/CAIM2100/M000370648.jpg/dims/resize/F_webp,400"
+                                            type="image/webp" class="css-1doy9ip euf32k21">
+                                        <img class="rounded-lg"
+                                            src="https://image.tving.com/upload/cms/caim/CAIM2100/M000370648.jpg/dims/resize/400"
+                                            alt="폴- 600미터">
+                                    </picture>
+                                </div>
+                            </div>
+
+                            <div class="">
+                                <p class="text-white">폴- 600미터</p>
+                            </div>
+
+                            <div class="item__summary">
+                                <dl>
+                                    <dt>폴- 600미터</dt>
+                                    <dd><span>스릴러</span>
+                                        <p>지상에서 가장 높은 600m 타워
+                                            내려갈 단 하나의 길이 끊겼다!
+
+                                            핸드폰 먹통
+                                            식량 전무
+                                            잠들면 추락
+
+                                            한계 초과! 압도적 스릴!
+                                            지금껏 없었던 고소공포에 전율한다!</p>
+                                    </dd>
+                                </dl>
+
+                        </a>
+                    </div>
+                </div>
+
+                <div class="ml-8" style="width: 200px;">
+                    <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100 rounded-lg">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caim/CAIM2100/M000371639.jpg/dims/resize/F_webp,400"
+                                        type="image/webp" class="css-1doy9ip euf32k21">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caim/CAIM2100/M000371639.jpg/dims/resize/400"
+                                        alt="탑건：매버릭">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="item__summary">
+                            <dl>
+                                <dt>탑건：매버릭</dt>
+                                <dd><span>액션</span>
+                                    <p>최고의 파일럿이자 전설적인 인물 매버릭(톰 크루즈)은 자신이 졸업한 훈련 학교 교관으로 발탁된다. 그의 명성을 모르던 팀원들은
+                                        매버릭의 지시를 무시하지만 실전을 방불케 하는 상공 훈련에서 눈으로 봐도 믿기 힘든 전설적인 조종 실력에 모두가 압도된다.
+                                        매버릭의 지휘 아래 견고한 팀워크를 쌓아가던 팀원들에게 국경을 뛰어넘는 위험한 임무가 주어지자 매버릭은 자신이 가르친 동료들과
+                                        함께 마지막이 될 지 모를 하늘 위 비행에 나서는데…</p>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="">
+                            <p class="text-white">탑건：매버릭</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- 지지님이 좋아하실 프로그램 -->
+    <section class="text-white">
+
+        <div class="">
+            <h2 class="text-xl pt-12 px-2 font-bold m-8">지지님이 좋아하실 만한 프로그램</h2>
+        </div>
+
+
+        <div class="flex overflow-x-scroll " id="scroll">
+            <div class="flex">
+                <div class="mr-4 ml-8" style="width: 200px;">
+                    <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP0900/P001695622.jpg/dims/resize/F_webp,400"
+                                        type="image/webp" class="">
+                                    <img class="rounded-lg "
+                                        src="https://image.tving.com/upload/cms/caip/CAIP0900/P001695622.jpg/dims/resize/400"
+                                        alt="피크타임">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">피크타임</p>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="mr-4 ml-4" style="width: 200px;"><a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP0900/P001685572.jpg/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP0900/P001685572.jpg/dims/resize/400"
+                                        alt="조선 정신과 의사 유세풍 2">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">조선 정신과 의사 유세풍 2</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="mr-4 ml-4" style="width: 200px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP0900/P001690240.jpg/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP0900/P001690240.jpg/dims/resize/400"
+                                        alt="웹툰싱어">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">웹툰싱어</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="mr-4 ml-4" style="width: 200px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP0900/P001692626.jpg/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP0900/P001692626.jpg/dims/resize/400"
+                                        alt="신병캠프">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">신병캠프</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="mr-4 ml-4" style="width: 200px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP0900/P001670361.jpg/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP0900/P001670361.jpg/dims/resize/400"
+                                        alt="아무것도 하고 싶지 않아">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">아무것도 하고 싶지 않아</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="mr-4 ml-4" style="width: 200px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP0900/P001682579.jpg/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP0900/P001682579.jpg/dims/resize/400"
+                                        alt="너에게닿기를">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">너에게닿기를</p>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="mr-4 ml-4" style="width: 200px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP0900/P000120061.jpg/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP0900/P000120061.jpg/dims/resize/400"
+                                        alt="응답하라 1994">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">응답하라 1994</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="mr-4 ml-4" style="width: 200px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP0900/P001682084.jpg/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP0900/P001682084.jpg/dims/resize/400"
+                                        alt="보이즈플래닛 - 스타 이즈 본">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">보이즈플래닛 - 스타 이즈 본</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="mr-4 ml-4" style="width: 200px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP0900/P001480723.jpg/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP0900/P001480723.jpg/dims/resize/400"
+                                        alt="베르사유의 장미">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">베르사유의 장미</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- 티빙에서만 볼 수 있는 프로그램 -->
+    <section class="text-white">
+
+        <div class="">
+            <h2 class="text-xl pt-12 px-2 font-bold m-8">티빙에서만 볼 수 있는 프로그램</h2>
+        </div>
+
+
+        <div class="flex overflow-x-scroll " id="scroll">
+            <div class="flex">
+                <div class="mr-4 ml-8" style="width: 215.25px;">
+                    <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP2500/P001665114.jpg/dims/resize/F_webp,600"
+                                        type="image/webp" class="">
+                                    <img class="rounded-lg "
+                                        src="https://image.tving.com/upload/cms/caip/CAIP2500/P001665114.jpg/dims/resize/600"
+                                        alt="아일랜드">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">아일랜드</p>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="mr-4 ml-4" style="width: 215.25px;"><a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP2500/P001682443.jpg/dims/resize/F_webp,600"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP2500/P001682443.jpg/dims/resize/600"
+                                        alt="두발로 티켓팅">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">두발로 티켓팅</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="mr-4 ml-4" style="width: 215.25px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP2520/P001684080.jpg/dims/resize/F_webp,600"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP2520/P001684080.jpg/dims/resize/600"
+                                        alt="만찢남">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">만찢남</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="mr-4 ml-4" style="width: 215.25px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP2500/P001682441.jpg/dims/resize/F_webp,600"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP2500/P001682441.jpg/dims/resize/600"
+                                        alt="IM HERO ENCORE (2022 임영웅 앵콜 콘서트-서울)">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">IM HERO ENCORE (2022 임영웅 앵콜 콘서트-서울)</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="mr-4 ml-4" style="width: 215.25px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP2500/P001651316.jpg/dims/resize/F_webp,600"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP2500/P001651316.jpg/dims/resize/600"
+                                        alt="술꾼도시여자들2">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">술꾼도시여자들2</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="mr-4 ml-4" style="width: 215.25px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP2500/P001518829.jpg/dims/resize/F_webp,600"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP2500/P001518829.jpg/dims/resize/600"
+                                        alt="술꾼도시여자들">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">술꾼도시여자들</p>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="mr-4 ml-4" style="width: 215.25px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP2520/P001537909.jpg/dims/resize/F_webp,600"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP2520/P001537909.jpg/dims/resize/600"
+                                        alt="여고추리반2">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">여고추리반2</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="mr-4 ml-4" style="width: 215.25px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP2520/P001457348.jpg/dims/resize/F_webp,600"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP2520/P001457348.jpg/dims/resize/600"
+                                        alt="신서유기 스페셜 스프링 캠프">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">신서유기 스페셜 스프링 캠프</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="mr-4 ml-4" style="width: 215.25px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP2510/P001613931.jpg/dims/resize/F_webp,600"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP2510/P001613931.jpg/dims/resize/600"
+                                        alt="환승연애 시즌2">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">환승연애 시즌2</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="mr-4 ml-4" style="width: 215.25px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP2510/P001443981.jpg/dims/resize/F_webp,600"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP2510/P001443981.jpg/dims/resize/600"
+                                        alt="철인왕후: 대나무숲">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">철인왕후: 대나무숲</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="mr-4 ml-4" style="width: 215.25px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP2500/P001624171.jpg/dims/resize/F_webp,600"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP2500/P001624171.jpg/dims/resize/600"
+                                        alt="IM HERO(2022 임영웅 콘서트)">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">IM HERO(2022 임영웅 콘서트)</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="mr-4 ml-4" style="width: 215.25px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP2510/P001587338.jpg/dims/resize/F_webp,600"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP2510/P001587338.jpg/dims/resize/600"
+                                        alt="장미맨션">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">장미맨션</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="mr-4 ml-4" style="width: 215.25px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP2510/P001670538.jpg/dims/resize/F_webp,600"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP2510/P001670538.jpg/dims/resize/600"
+                                        alt="신병">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">신병</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="mr-4 ml-4" style="width: 215.25px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP2520/P001565742.jpg/dims/resize/F_webp,600"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP2520/P001565742.jpg/dims/resize/600"
+                                        alt="돼지의 왕">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">돼지의 왕</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="mr-4 ml-4" style="width: 215.25px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP2510/P001690240.jpg/dims/resize/F_webp,600"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP2510/P001690240.jpg/dims/resize/600"
+                                        alt="웹툰싱어">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">웹툰싱어</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="mr-4 ml-4" style="width: 215.25px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP2510/P001594130.jpg/dims/resize/F_webp,600"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP2510/P001594130.jpg/dims/resize/600"
+                                        alt="유미의 세포들 시즌2">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">유미의 세포들 시즌2</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- 요즘 뜨는 프로그램 -->
+    <section class="text-white">
+
+        <div class="">
+            <h2 class="text-xl pt-12 px-2 font-bold m-8">요즘 뜨는 프로그램</h2>
+        </div>
+
+
+        <div class="flex overflow-x-scroll " id="scroll">
+            <div class="flex">
+                <div class="mr-4 ml-8" style="width: 200px;">
+                    <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP0900/P001685600.jpg/dims/resize/F_webp,400"
+                                        type="image/webp" class="">
+                                    <img class="rounded-lg "
+                                        src="https://image.tving.com/upload/cms/caip/CAIP0900/P001685600.jpg/dims/resize/400"
+                                        alt="일타스캔들">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">일타스캔들</p>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="mr-4 ml-4" style="width: 200px;"><a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP0900/P000163250.jpg/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP0900/P000163250.jpg/dims/resize/400"
+                                        alt="순정에 반하다">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">순정에 반하다</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="mr-4 ml-4" style="width: 200px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP0900/P001695319.jpg/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP0900/P001695319.jpg/dims/resize/400"
+                                        alt="위닝런">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">위닝런</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="mr-4 ml-4" style="width: 200px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP0900/P001621655.jpg/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP0900/P001621655.jpg/dims/resize/400"
+                                        alt="스포츠 탐정들">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">스포츠 탐정들</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="mr-4 ml-4" style="width: 200px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP0900/P001565742.jpg/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP0900/P001565742.jpg/dims/resize/400"
+                                        alt="돼지의 왕">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">돼지의 왕</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="mr-4 ml-4" style="width: 200px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP0900/P000392010.jpg/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP0900/P000392010.jpg/dims/resize/400"
+                                        alt="구해줘">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">구해줘</p>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="mr-4 ml-4" style="width: 200px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP0900/P000120061.jpg/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP0900/P000120061.jpg/dims/resize/400"
+                                        alt="응답하라 1994">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">응답하라 1994</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="mr-4 ml-4" style="width: 200px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP0900/P001682084.jpg/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP0900/P001682084.jpg/dims/resize/400"
+                                        alt="보이즈플래닛 - 스타 이즈 본">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">보이즈플래닛 - 스타 이즈 본</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="mr-4 ml-4" style="width: 200px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caip/CAIP0900/P001480723.jpg/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caip/CAIP0900/P001480723.jpg/dims/resize/400"
+                                        alt="베르사유의 장미">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">베르사유의 장미</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- 너의 이름은 같은 -->
+    <section class="text-white">
+
+        <div class="">
+            <h2 class="text-xl pt-12 px-2 font-bold m-8">&lt;너의 이름은&gt;같은 청춘 애니메이션</h2>
+        </div>
+
+
+        <div class="flex overflow-x-scroll " id="scroll">
+            <div class="flex">
+                <div class="mr-4 ml-8" style="width: 200px;">
+                    <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caim/CAIM2100/M000149049.jpg/dims/resize/F_webp,400"
+                                        type="image/webp" class="">
+                                    <img class="rounded-lg "
+                                        src="https://image.tving.com/upload/cms/caim/CAIM2100/M000149049.jpg/dims/resize/400"
+                                        alt="[자막] 너의 이름은">
+                                </picture>
+                            </div>
+                            <div class="item__summary">
+                                <dl>
+                                    <dt>[자막] 너의 이름은.</dt>
+                                    <dd><span>애니메이션</span>
+                                        <p>꿈 속에서 몸이 뒤바뀐 도시 소년 ‘타키’와 시골 소녀 ‘미츠하’,
+                                            만난 적 없는 두 사람이 만들어가는 기적과 사랑에 관한 이야기 &lt;너의 이름은.&gt;
+
+                                            잊고 싶지 않은 사람
+                                            잊으면 안 되는 사람
+                                            너의 이름은?</p>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">[자막] 너의 이름은</p>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="mr-4 ml-4" style="width: 200px;"><a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caim/CAIM2100/M000309833.jpg/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caim/CAIM2100/M000309833.jpg/dims/resize/400"
+                                        alt="[자막] 날씨의 아이">
+                                </picture>
+                            </div>
+                            <div class="item__summary">
+                                <dl>
+                                    <dt>[자막] 날씨의 아이</dt>
+                                    <dd><span>드라마</span>
+                                        <p>“이제 비는 그치고, 우리의 세상이 빛나기 시작할 거야”
+
+                                            비가 그치지 않던 어느 여름날,
+                                            가출 소년 ‘호다카’는 수상한 잡지사에 취직하게 되고
+                                            비밀스러운 소녀 ‘히나’를 우연히 만난다.
+
+                                            “지금부터 하늘이 맑아질 거야”
+
+                                            그녀의 기도에 거짓말 같이 빗줄기는 멈추고,
+                                            사람들의 얼굴에 환한 빛이 내려온다.
+
+                                            “신기해, 날씨 하나에 사람들의 감정이 이렇게나 움직이다니”
+
+                                            하지만, 맑음 뒤 흐림이 찾아오듯
+                                            두 사람은 엄청난 세계의 비밀을 마주하게 되는데...
+
+                                            흐리기만 했던 세상이 빛나기 시작했고, 그 끝에는 네가 있었다.</p>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">[자막] 날씨의 아이</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="mr-4 ml-4" style="width: 200px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caim/CAIM2100/M000294933.jpg/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caim/CAIM2100/M000294933.jpg/dims/resize/400"
+                                        alt="너의 췌장을 먹고 싶어 (2018)">
+                                </picture>
+                            </div>
+                            <div class="item__summary">
+                                <dl>
+                                    <dt>너의 췌장을 먹고 싶어 (2018)</dt>
+                                    <dd><span>애니메이션</span>
+                                        <p>우연히 주운 한 권의 『공병문고』로
+                                            우리는 조금씩 가까워지기 시작했다.
+
+                                            “나 사실은…
+                                            죽는 게 너무 무섭다고 하면 어떻게 할래?”
+
+                                            내가 몰랐던 너, 네가 몰랐던 나
+                                            다시 우리의 이야기</p>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">너의 췌장을 먹고 싶어 (2018)</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="mr-4 ml-4" style="width: 200px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caim/CAIM2100/M000299041.png/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caim/CAIM2100/M000299041.png/dims/resize/400"
+                                        alt="[자막] 펭귄 하이웨이">
+                                </picture>
+                            </div>
+                            <div class="item__summary">
+                                <dl>
+                                    <dt>[자막] 펭귄 하이웨이</dt>
+                                    <dd><span>애니메이션</span>
+                                        <p>“이 수수께끼도 풀어 보렴. 어때, 할 수 있겠어?”
+
+                                            한편, 아오야마와 그의 연구 친구인 우치다에게 같은 반 친구 하마모토가 숲속 초원에 떠 있는 투명하고 커다란 둥근 물체의
+                                            존재에 대해 알려준다. 골목대장 스즈키 일행이 훼방 놓아도, 펭귄과 그 둥근 물체인 “바다”의 연구를 이어가는 아오야마와
+                                            친구들. 마침내 아오야마는 “바다”와 펭귄, 그리고 누나에게는 어떠한 연결고리가 있지 않을까 하고 생각한다.
+
+                                            그러던 어느 날, 누나의 몸 상태에 이상한 변화가 일어나고, 동시에 이상한 현상이 마을을 덮친다. 마을에 대피 지시가
+                                            내려지고, 아오야마는 어느 &lt;한가지 가설&gt;을 가지고 뛰기 시작한다!
+
+                                            과연 누나와 펭귄, 그리고 “바다”의 수수께끼는 풀릴 것인가?</p>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">[자막] 펭귄 하이웨이</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="mr-4 ml-4" style="width: 200px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caim/CAIM2100/M000368462.jfif/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caim/CAIM2100/M000368462.jfif/dims/resize/400"
+                                        alt="[자막] 안녕, 나의 크라머 퍼스트 터치">
+                                </picture>
+                            </div>
+                            <div class="item__summary">
+                                <dl>
+                                    <dt>[자막] 안녕, 나의 크라머 퍼스트 터치</dt>
+                                    <dd><span>애니메이션</span>
+                                        <p>여고생 축구 플레이어 ‘온다 노조미’. 그녀는 후지제일중학교 남자 축구부에서의 도전을 거쳐, 진학처의 와라비 세이난
+                                            고등학교에서 대망의 여자 축구부에 입부한다. 하지만, 그곳은 “계속 지방대회에서 멈춘” 약소학교였다!? 그런데 와라비
+                                            세이난에는 개성파 신입부원이 모인다. 준족의 날개 ‘스오우 스미레’와 중학생 전국 3위의 볼란치(수비형 미드필더)
+                                            ‘소시자키 미도리’, 코치는 전 일본 대표의 레전드 ‘노우미 나오코’가 가입! 노미는 그녀들의 첫 경기에 최고의 연습
+                                            경기를 준비한다. 그 상대는 고등학교 일본 제일의 쿠노기 학원! 차례차례로 나타나는 강호 팀을 앞에 두고, 와라비 세이난은
+                                            동료와 함께 대항해 간다! 혼자라도, 이해되지 않더라도, 남자와 비교를 당해도, 진심으로 축구를 좋아하니까. 만나야 했기에
+                                            만났던, 순진 일레븐이 지향하는 풋볼의 정점. 지금, 소녀들은 여자 축구의 미래 &lt;필드&gt;를 향해 달려 나간다!
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">[자막] 안녕, 나의 크라머 퍼스트 터치</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="mr-4 ml-4" style="width: 200px;"> <a class="" href="#">
+                        <div class="">
+                            <div class="">
+                                <picture class="curcor-pointer opacity-80 hover:opacity-100">
+                                    <source
+                                        srcset="https://image.tving.com/upload/cms/caim/CAIM2100/M000145240.jpg/dims/resize/F_webp,400"
+                                        type="image/webp">
+                                    <img class="rounded-lg"
+                                        src="https://image.tving.com/upload/cms/caim/CAIM2100/M000145240.jpg/dims/resize/400"
+                                        alt="예전부터 계속 좋아했어 ~고백실행위원회~">
+                                </picture>
+                            </div>
+                            <div class="item__summary">
+                                <dl>
+                                    <dt>예전부터 계속 좋아했어 ~고백실행위원회~</dt>
+                                    <dd><span>애니메이션</span>
+                                        <p>&lt;마음이 외치고 싶어해&gt; &lt;아노하나&gt; 시리즈 제작진이 선사하는 첫 사랑의 기억!
+                                            일본 최고의 다재다능 크리에이터 유닛 ‘허니웍스’의 첫 번째 애니메이션!
+
+                                            과연 두근두근 ‘고백 예행 연습’이 설렘설렘 실전으로 이어질 수 있을까?
+
+                                            사쿠라가오카 고등학교 3학년인 에노모토 나츠키는 소꿉친구인 세토구치 유우를 짝사랑 중이다. 오랜 시간의 짝사랑 끝에 용기를
+                                            내서 고백하지만 부끄러운 마음에 유우에게 한 고백을 ‘고백 예행 연습’이라고 얼버무린다. 여전히 유우를 짝사랑 하는
+                                            나츠키는 진짜 감정을 계속 숨기던 중, 같은 반 친구인 아야세 코유키에게 데이트 신청을 받게 되고, 나츠키와 유우의 관계는
+                                            점점 사랑과 우정의 미로에 빠진다. 나츠키의 ‘고백 예행 연습’은 진짜가 될 수 있을까?!</p>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-white">예전부터 계속 좋아했어 ~고백실행위원회~</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+
+    </section>
+
+
+    <footer class="text-white mt-24 ml-8 mb-20">
+        <nav class=""><a href="#">고객센터</a> <a href="#">이용약관</a><a href="#"><strong>개인정보처리방침</strong></a><a href="#">청소년
+                보호정책</a><a href="#">법적고지</a><a href="#">이벤트</a><a target="_blank" rel="noreferrer" href="#">인재채용</a>
+        </nav>
+        <div class="copyright-box">
+            <p><span>대표이사 : LEE NAJIN </span><span><a class="">사업자정보확인</a></span><span>사업자등록번호 :
+                    991109-991109</span><span>통신판매신고번호 : 2023-03-03</span></p>
+            <p><span>사업장 : 인천 서구 ㅇㅇㅇ ㅇㅇㅇ ㅇㅇㅇ</span><span>호스팅사업자 : ㅇㅇㅇ </span></p>
+            <p><span class="btn_inquiry"><a>고객문의 바로가기</a></span><span>대표메일 : </span><span>고객센터 :
+                    1109-1109 (평일/주말 09시~18시, 공휴일 휴무)</span></p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
